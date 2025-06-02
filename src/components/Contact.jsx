@@ -10,9 +10,9 @@ const Contact = () => (
         Want to collaborate? I'm open for freelance and full-time opportunities.
       </p>
       <div className="flex justify-center space-x-6">
-        <a href="mailto:your.email@example.com" className="text-gray-700 hover:text-black"><Mail size={28} /></a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-black"><Github size={28} /></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-black"><Linkedin size={28} /></a>
+        <a href="mailto:morafidela04@gmail.com" className="text-gray-700 hover:text-black"><Mail size={28} /></a>
+        <a href="https://github.com/zamorafidelaa" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-black"><Github size={28} /></a>
+        <a href="https://www.linkedin.com/in/mora-fidela-a57608369/?trk=opento_sprofile_topcard" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-black"><Linkedin size={28} /></a>
       </div>
     </motion.div>
   </section>
