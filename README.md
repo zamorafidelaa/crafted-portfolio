@@ -8,27 +8,29 @@ Website ini dirancang dengan gaya visual **soft gradient** dan menggunakan **Rea
 
 ## 🧠 Tentang Saya
 
-Saya adalah seorang mahasiswa di Fakultas Ilmu Komputer, jurusan Manajemen Informatika. Saya memiliki ketertarikan dalam pengembangan antarmuka web modern menggunakan teknologi seperti React dan JavaScript. Portfolio ini merupakan salah satu bentuk ekspresi dan dokumentasi perjalanan belajar serta karya saya.
+Saya adalah seorang mahasiswa di Fakultas Ilmu Komputer, jurusan Manajemen Informatika.
+Saya memiliki ketertarikan dalam pengembangan antarmuka web modern menggunakan React.js dan JavaScript, serta minat pada pengembangan backend dengan Java Spring Boot yang dapat diintegrasikan dengan frontend berbasis React.
 
+Portfolio ini merupakan salah satu bentuk ekspresi dan dokumentasi perjalanan belajar serta karya saya.
 ---
 
 ## ✨ Fitur Portfolio
 
-- 🌈 Desain latar gradasi lembut (soft gradient)
-- 🍔 Menu hamburger **selalu tampil**, baik di layar besar maupun kecil
-- 🖱 Navigasi dropdown yang smooth dan mudah diakses
-- 💬 Hero section dengan animasi Framer Motion
-- 📱 Desain responsif dan mobile-friendly
-- 💡 Dibangun menggunakan React + Tailwind CSS
+- Desain latar gradasi lembut (soft gradient)
+- Menu hamburger
+- Navigasi dropdown yang smooth dan mudah diakses
+- Hero section dengan animasi Framer Motion
+- Desain responsif dan mobile-friendly
+- Dibangun menggunakan React + Tailwind CSS
 
 ---
 
 ## 📬 Kontak
 
 **Mora Fidela**  
-✉️ morafidela1@gmail.com  
-🌐 []
+✉️ morafidela04@gmail.com  
+🌐 [GitHub](https://github.com/zamorafidelaa)
 
----
+--- 
 
 Terima kasih sudah melihat portfolio saya! 😊
