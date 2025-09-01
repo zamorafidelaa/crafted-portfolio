@@ -11,9 +11,9 @@ const projects = [
     github: "https://github.com/zamorafidelaa/ZAMORA-S-SHOES.git",
   },
   {
-    title: "HTML & CSS – Zamoranime",
+    title: "HTML, CSS & JavaScript – Zamoranime",
     description:
-      "A responsive anime-themed website built using HTML and CSS with clean layout and modern design.",
+      "An interactive anime-themed website built with HTML, CSS, and JavaScript, integrated with an external API for dynamic content.",
     image: "vid.mp4",
     github: "https://github.com/zamorafidelaa/MORA_FIDELA.git",
   },
@@ -29,15 +29,15 @@ const projects = [
     title: "Advanced React – Zamora Kicks Care",
     description:
       "A sneaker care guide with advanced React patterns, custom hooks, and optimized rendering.",
-    image: "/images/projects/zamora-kicks.png",
+    image: "kicks.png",
     github: "https://github.com/zamorafidelaa/Zamora-Kicks-Care.git",
   },
   {
     title: "React + Java – ZamoraGG Food",
     description:
       "A full-stack food ordering platform using React for frontend and Java for backend APIs.",
-    image: "/images/projects/zamoragg-food.png",
-    github: "https://github.com/username/zamoragg-food",
+    image: "ggfood.png",
+    github: "https://github.com/zamorafidelaa/ZamoraGG-Food",
   },
 ];
 
@@ -76,11 +76,7 @@ const Projects = () => (
               {project.image.endsWith(".mp4") ? (
                 <video
                   src={project.image}
-                  className={`w-full rounded-lg border border-pink-200 mb-4 ${
-                    project.title.includes("Zamora Beauty Guide")
-                      ? "h-60"
-                      : "h-52"
-                  } object-cover`}
+                  className="w-full rounded-lg border border-pink-200 mb-4 h-auto max-h-96 object-contain"
                   autoPlay
                   loop
                   muted
@@ -90,7 +86,7 @@ const Projects = () => (
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-52 w-full object-cover rounded-lg border border-pink-200 mb-4"
+                  className="w-full h-auto max-h-96 object-contain rounded-lg border border-pink-200 mb-4 bg-white"
                 />
               )}
             </motion.div>

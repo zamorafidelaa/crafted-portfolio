@@ -9,10 +9,16 @@ const experiences = [
     image: "c.jpeg",
   },
   {
-    title: "HTML & CSS",
+    title: "HTML",
     description:
-      "Gained knowledge of web structure and created clean, responsive layouts using HTML and CSS.",
-    image: "htmlcss.jpeg",
+      "Studied the foundation of web structure using semantic HTML to build accessible and well-structured pages.",
+    image: "html.png",
+  },
+  {
+    title: "CSS",
+    description:
+      "Learned how to style and design websites with modern CSS, including layouts, animations, and responsive design.",
+    image: "css.png",
   },
   {
     title: "JavaScript",
@@ -33,6 +39,12 @@ const experiences = [
     images: ["mysql.jpeg", "postgres.jpeg"],
   },
   {
+    title: "Git & GitHub",
+    description:
+      "Learned version control using Git for tracking changes, collaborating on projects, and managing repositories on GitHub.",
+    images: ["git.png", "github.png"],
+  },
+  {
     title: "React.js",
     description:
       "Explored building modern web interfaces using React, creating reusable components, and managing state effectively.",
@@ -45,10 +57,10 @@ const experiences = [
     image: "nodejs.jpeg",
   },
   {
-    title: "Java",
+    title: "Java & Spring Boot",
     description:
-      "Understood Java fundamentals, object-oriented programming, and developed simple backend applications.",
-    image: "java.jpeg",
+      "Studied Java fundamentals and object-oriented programming, then extended skills to backend development using Spring Boot to build APIs and enterprise applications.",
+    images: ["java.jpeg"],
   },
 ];
 

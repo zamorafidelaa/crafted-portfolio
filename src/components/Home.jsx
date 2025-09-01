@@ -20,7 +20,7 @@ const Home = () => (
     />
 
     <motion.h1
-      className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg font-heading"
+      className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg font-heading"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -29,7 +29,7 @@ const Home = () => (
     </motion.h1>
 
     <motion.p
-      className="text-2xl md:text-3xl text-white/80 max-w-xl mb-10"
+      className="text-lg sm:text-xl md:text-2xl text-white max-w-xl mb-10 drop-shadow-[0_0_4px_#f9a8d4]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.4, duration: 0.8 }}
@@ -38,25 +38,25 @@ const Home = () => (
       Java for backend development.
     </motion.p>
 
-    <motion.div
-      className="flex flex-col sm:flex-row gap-4 items-center"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.6, duration: 0.8 }}
-    >
-      <a
-        href="#projects"
-        className="bg-white text-black px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:scale-105 transition transform"
-      >
-        See My Projects
-      </a>
-      <a
-        href="#contact"
-        className="border border-white text-white px-8 py-3 rounded-full text-lg hover:bg-white hover:text-black transition"
-      >
-        Contact Me
-      </a>
-    </motion.div>
+<motion.div
+  className="flex flex-col sm:flex-row gap-4 items-center mt-6 sm:mt-0 pb-6 sm:pb-0"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.6, duration: 0.8 }}
+>
+  <a
+    href="#projects"
+    className="bg-white text-black px-6 sm:px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:scale-105 transition transform"
+  >
+    See My Projects
+  </a>
+  <a
+    href="#contact"
+    className="border border-white text-white bg-white/20 px-6 sm:px-8 py-3 rounded-full text-lg font-bold drop-shadow-md hover:bg-white hover:text-black transition transform hover:scale-105"
+  >
+    Contact Me
+  </a>
+</motion.div>
   </section>
 );
 
