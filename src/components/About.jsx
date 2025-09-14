@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const About = () => (
-<section
-  className="relative py-24 px-6 max-w-6xl mx-auto text-center font-sans bg-pink-100 text-gray-900 rounded-3xl shadow-md mt-20 mb-20 scroll-mt-36"
-  id="about"
->
+  <section
+    className="relative py-24 px-6 max-w-6xl mx-auto text-center font-sans bg-pink-100 text-gray-900 rounded-3xl shadow-md mt-20 mb-20 scroll-mt-36"
+    id="about"
+  >
     <motion.h2
       className="text-4xl md:text-5xl font-bold mb-8 tracking-tight"
       initial={{ opacity: 0, y: 20 }}
@@ -21,14 +21,24 @@ const About = () => (
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.6 }}
     >
-      I’m a passionate web developer who loves crafting visually appealing and
-      high-performance websites. My expertise lies in building modern web
-      experiences using{" "}
-      <span className="font-semibold text-purple-600">React</span> for frontend
-      development and{" "}
-      <span className="font-semibold text-purple-600">Java</span> for backend
-      solutions. I focus on delivering clean, responsive designs that provide
-      seamless user experiences — blending creativity with functionality.
+      I am a{" "}
+      <span className="font-semibold text-purple-600">
+        D3 Informatics Management student
+      </span>{" "}
+      at Universitas Nasional PASIM Bandung through the{" "}
+      <span className="font-semibold text-purple-600">
+        Pemberdayaan Umat Berkelanjutan Scholarship
+      </span>{" "}
+      program. I have completed various programming training and gained
+      hands-on experience in developing responsive and user-friendly web
+      applications. Proficient in{" "}
+      <span className="font-semibold text-purple-600">
+        Java, C, JavaScript, Spring Boot, Node.js, Express.js, React.js,
+        MySQL, and PostgreSQL
+      </span>
+      . Equipped with strong teamwork, communication, and problem-solving
+      skills, I am highly motivated to continuously grow and contribute in
+      the field of web development.
     </motion.p>
 
     <motion.div

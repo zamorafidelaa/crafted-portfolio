@@ -1,27 +1,24 @@
 import React, { useState } from "react";
-import { Menu, X, Home, User, BookOpen, Code, Mail } from "lucide-react";
-
+import { Menu, X, Home, User, BookOpen, Code, Mail, Award } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuItems = [
   { name: "home", icon: <Home size={16} /> },
   { name: "about", icon: <User size={16} /> },
+  { name: "certificates", icon: <Award size={16} /> }, // Added certificates
   { name: "experience", icon: <BookOpen size={16} /> },
   { name: "projects", icon: <Code size={16} /> },
   { name: "contact", icon: <Mail size={16} /> },
 ];
 
 const navVariants = {
-  hidden: {
-    opacity: 0,
-    scale: 0.95,
-    pointerEvents: "none",
-  },
+  hidden: { opacity: 0, scale: 0.95, y: -10, pointerEvents: "none" },
   visible: {
     opacity: 1,
     scale: 1,
+    y: 0,
     pointerEvents: "auto",
-    transition: { duration: 0.3, ease: "easeOut" },
+    transition: { duration: 0.25, ease: "easeOut" },
   },
 };
 
@@ -30,7 +27,7 @@ const Navbar = () => {
   const toggleMenu = () => setOpen(!open);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-pink-50/90 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 w-full z-50 bg-pink-50/80 backdrop-blur-md shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <a
           href="#home"
@@ -38,13 +35,13 @@ const Navbar = () => {
         >
           <img
             src="mora.svg"
-            alt=""
-            className="flex items-center justify-center w-10 h-10 bg-pink-300 rounded-full text-white font-bold text-lg select-none mr-3"
+            alt="logo"
+            className="w-10 h-10 bg-pink-300 rounded-full mr-3"
           />
           Zaamora
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
           {menuItems.map(({ name, icon }) => (
             <a
@@ -58,16 +55,16 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle */}
         <button
           onClick={toggleMenu}
-          className="md:hidden bg-white p-2 rounded-lg shadow hover:bg-gray-100 transition relative"
+          className="md:hidden bg-white p-2 rounded-lg shadow hover:bg-gray-100 transition"
           aria-label="Toggle menu"
         >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
 
-        {/* Mobile Navigation with animation */}
+        {/* Mobile Nav */}
         <AnimatePresence>
           {open && (
             <motion.nav
@@ -75,7 +72,7 @@ const Navbar = () => {
               animate="visible"
               exit="hidden"
               variants={navVariants}
-              className="md:hidden absolute top-16 right-6 bg-white/90 text-gray-700 rounded-xl shadow-xl w-48 origin-top-right"
+              className="md:hidden absolute top-16 right-6 bg-white/95 text-gray-700 rounded-xl shadow-xl w-48 origin-top-right"
             >
               <ul className="flex flex-col space-y-4 p-4 text-right font-medium">
                 {menuItems.map(({ name, icon }) => (
