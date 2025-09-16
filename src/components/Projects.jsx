@@ -9,35 +9,40 @@ const projects = [
       "A C language project to manage shoe inventory, applying basic data structures and algorithms.",
     image: "/images/projects/zamora-shoes.png",
     github: "https://github.com/zamorafidelaa/ZAMORA-S-SHOES.git",
+    tech: ["C", "Data Structures", "Algorithms"],
   },
   {
     title: "HTML, CSS & JavaScript – Zamoranime",
     description:
-      "An interactive anime-themed website built with HTML, CSS, and JavaScript, integrated with an external API for dynamic content.",
+      "Final exam project from Web Programming Training, built a responsive web app using HTML, CSS, and JavaScript within 10 days, integrating an external API with search functionality to let users watch anime trailers and read manga previews.",
     image: "vid.mp4",
     github: "https://github.com/zamorafidelaa/MORA_FIDELA.git",
+    tech: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
     title: "React Fundamentals – Zamora Beauty Guide",
     description:
-      "A beauty tips web app built with React fundamentals, focusing on component-based design and state management.",
+      "Final exam project from Fundamental Front-End Programming Training, built a responsive React and Tailwind CSS web app in 10 days, providing user skin consultation features, an admin dashboard with full CRUD functionality, and product search and sort capabilities.",
     image: "vidtwo.mp4",
     github: "https://github.com/zamorafidelaa/zamora-beauty-guide.git",
     live: "https://zamora-beauty-guide.vercel.app",
+    tech: ["React", "Tailwind CSS"],
   },
   {
     title: "Advanced React – Zamora Kicks Care",
     description:
-      "A sneaker care guide with advanced React patterns, custom hooks, and optimized rendering.",
+      "Final exam project from Advanced Front-End Programming Training, built a responsive web app for online shoe cleaning services within 11 days, featuring user registration and login, service browsing, and detailed order placement with a modern UI.",
     image: "kicks.png",
     github: "https://github.com/zamorafidelaa/Zamora-Kicks-Care.git",
+    tech: ["React", "Node.js", "Express.js", "Axios", "Tailwind CSS", "PostgreSQL"],
   },
   {
     title: "React + Java – ZamoraGG Food",
     description:
-      "A full-stack food ordering platform using React for frontend and Java for backend APIs.",
+      "Final exam project from Fullstack Programming Training, built a responsive food delivery platform in 14 days, featuring customer order management with real-time tracking, courier delivery status updates, and an admin dashboard for managing restaurants, menus, and couriers.",
     image: "ggfood.png",
     github: "https://github.com/zamorafidelaa/ZamoraGG-Food",
+    tech: ["React", "Tailwind CSS", "Java Spring Boot", "JPA", "MySQL"],
   },
 ];
 
@@ -97,6 +102,32 @@ const Projects = () => (
             <p className="text-gray-600 mt-2 leading-relaxed flex-grow">
               {project.description}
             </p>
+
+            {/* Tech Stack */}
+            <motion.div
+              className="flex flex-wrap gap-2 mt-4"
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { staggerChildren: 0.1 },
+                },
+              }}
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              {project.tech?.map((stack, i) => (
+                <motion.span
+                  key={i}
+                  className="px-3 py-1 text-sm rounded-full bg-pink-100 text-pink-700 border border-pink-200"
+                  variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                >
+                  {stack}
+                </motion.span>
+              ))}
+            </motion.div>
 
             <div className="mt-4 flex gap-4">
               {project.github && (

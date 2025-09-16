@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const menuItems = [
   { name: "home", icon: <Home size={16} /> },
   { name: "about", icon: <User size={16} /> },
-  { name: "certificates", icon: <Award size={16} /> }, // Added certificates
+  { name: "certificates", icon: <Award size={16} /> }, 
   { name: "experience", icon: <BookOpen size={16} /> },
   { name: "projects", icon: <Code size={16} /> },
   { name: "contact", icon: <Mail size={16} /> },
