@@ -6,8 +6,8 @@ const projects = [
   {
     title: "C – Zamora's Shoes",
     description:
-      "A C language project to manage shoe inventory, applying basic data structures and algorithms.",
-    image: "/images/projects/zamora-shoes.png",
+      "Final exam project from Logic and Algorithm Training using C, developed a shoe inventory management system applying basic data structures and algorithms, including arrays, loops, and conditional logic, to handle add, update, delete, and search operations.",
+    image: "shoes.png",
     github: "https://github.com/zamorafidelaa/ZAMORA-S-SHOES.git",
     tech: ["C", "Data Structures", "Algorithms"],
   },
@@ -34,7 +34,14 @@ const projects = [
       "Final exam project from Advanced Front-End Programming Training, built a responsive web app for online shoe cleaning services within 11 days, featuring user registration and login, service browsing, and detailed order placement with a modern UI.",
     image: "kicks.png",
     github: "https://github.com/zamorafidelaa/Zamora-Kicks-Care.git",
-    tech: ["React", "Node.js", "Express.js", "Axios", "Tailwind CSS", "PostgreSQL"],
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Axios",
+      "Tailwind CSS",
+      "PostgreSQL",
+    ],
   },
   {
     title: "React + Java – ZamoraGG Food",
@@ -122,7 +129,10 @@ const Projects = () => (
                 <motion.span
                   key={i}
                   className="px-3 py-1 text-sm rounded-full bg-pink-100 text-pink-700 border border-pink-200"
-                  variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                  variants={{
+                    hidden: { opacity: 0, y: 10 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
                 >
                   {stack}
                 </motion.span>
